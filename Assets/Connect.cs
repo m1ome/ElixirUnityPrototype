@@ -137,6 +137,22 @@ public class Connect : MonoBehaviour
                 {"y", controll.y},
             });
         }
+
+        if (Input.GetKeyDown(KeyCode.W)) {
+            MoveTop();
+        }
+
+        if (Input.GetKeyDown(KeyCode.D)) {
+            MoveRight();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S)) {
+            MoveDown();
+        }
+
+        if (Input.GetKeyDown(KeyCode.A)) {
+            MoveLeft();
+        }
     }
 
     string GenerateRandomID()
